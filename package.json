@@ -1,0 +1,18 @@
+{
+  "name": "frameworkcypress",
+  "version": "1.0.0",
+  "description": "Framework de test cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "rulareCh": "npx cypress run --browser chrome --headed",
+     "merge-json": "npx mochawesome-merge cypress/reports/*.json > cypress/reports/merged-report.json",
+    "generate-html": "npx mochawesome-report-generator cypress/reports/merged-report.json -o cypress/reports/merged-html-report"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.13.2",
+    "mochawesome": "^7.1.3"
+  }
+}
